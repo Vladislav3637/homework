@@ -1,0 +1,61 @@
+body {
+    background: rgb(46, 46, 46);
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.title {
+    color: white;
+    transform: translate(0, 50px);
+}
+
+.title:hover::first-letter {
+    color: red;
+}
+
+.container::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(red, rgb(249, 128, 128));
+    border-radius: 100%;
+    border: solid 2px white;
+    position: absolute;
+    left: 35%;
+    top: 45px;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(blue, rgb(105, 105, 248));
+    border-radius: 100%;
+    border: solid 2px white;
+    position: absolute;
+    right: 35%;
+    top: 45px;
+}
+
+.container:hover::before {
+    background: linear-gradient(blue, rgb(105, 105, 248));
+}
+
+.container:hover::after {
+    background: linear-gradient(red, rgb(249, 128, 128));
+}

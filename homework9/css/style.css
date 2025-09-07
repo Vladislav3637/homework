@@ -1,0 +1,30 @@
+.container {
+    background: rgb(48, 48, 48);
+    height: 5000px;
+}
+
+.text {
+    font-size: 40px;
+    color: white;
+}
+
+.gray {
+    background: gray;
+    min-height: 100px;
+    width: auto;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+}
+
+.red {
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    top: -30px;
+    left: 50px;
+}

@@ -14,10 +14,12 @@ console.log(`Имя: ${me[0].firstName}; возраст: ${me[0].age}; проф�
     /* 2-е задание */
     console.log(' ')
 console.log('2-е задание:')
-function Hello(name) {
-    return `Hello, ${name}`
-}
-console.log(Hello('John'))
+const obj = {
+    greeting(name) {
+        return `Hello "${name}"`;
+    }
+};
+console.log(obj.greeting("John"));
 
 /* 3-е задание */
 console.log(' ')
@@ -58,3 +60,4 @@ for (let i = 0; i < users.length; i++) {
 }
 
 console.log(`Количество обычных пользователей: ${numberNoAdmin}`)
+

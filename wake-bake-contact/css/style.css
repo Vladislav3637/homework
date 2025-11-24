@@ -742,6 +742,7 @@
     padding: 19px 42px 19px 28px;
     font-size: 16px;
     transition: var(--transition);
+    margin-bottom: 20px;
 }
 
 .contact__input:hover {
@@ -1232,4 +1233,5 @@
     .testimonials__slide {
         padding: 30px 10px 30px;
     }
+
 }
